@@ -1,0 +1,2 @@
+class SelectedStylesController < ApplicationController
+end

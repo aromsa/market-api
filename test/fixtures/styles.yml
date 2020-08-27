@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collection: one
+  upc: MyString
+  style_name: MyString
+  style_number: MyString
+  color: MyString
+  size: MyString
+  fabric: MyString
+  wholesale: MyString
+  retail: MyString
+
+two:
+  collection: two
+  upc: MyString
+  style_name: MyString
+  style_number: MyString
+  color: MyString
+  size: MyString
+  fabric: MyString
+  wholesale: MyString
+  retail: MyString
