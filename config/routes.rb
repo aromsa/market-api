@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # HTTPVERB URL, to: 'CONTROLLER_NAME#ACTION_NAME'
   #  post '/users', to: 'users#create'
-  #  post '/users/login', to: 'users#login'
+  post '/buyers/login', to: 'buyers#login'
   resources :style_categories
   resources :images
   resources :deliveries

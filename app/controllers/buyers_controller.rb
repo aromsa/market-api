@@ -29,14 +29,14 @@ class BuyersController < ApplicationController
   #   redirect_to user_path(user.id)
   # end
 
-  def create
-    @buyer = Buyer.create(buyer_params())
-    if @buyer.valid?
-      render json: @buyer, status: 201
-    else
-      render json: {message: "Failed to create"}, status: 403
-    end
-  end
+  # def create
+  #   @buyer = Buyer.create(buyer_params())
+  #   if @buyer.valid?
+  #     render json: @buyer, status: 201
+  #   else
+  #     render json: {message: "Failed to create"}, status: 403
+  #   end
+  # end
 
 
   def login
