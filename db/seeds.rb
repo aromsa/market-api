@@ -19,10 +19,11 @@ ad_contemp = Category.create!(name: "Advanced Contemporary")
 designer = Category.create!(name: "Designer")
 activewear = Category.create!(name: "Activewear")
 
-kk = Designer.create!(category: ad_contemp, username: "KKidd", password: "asdf", name: "Katharine Kidd", img: "image", bio: "bio", instagram: "@katharinekidd", phone: "310-313-0993" )
-designer = Designer.create!(category: activewear, username: "active", password: "asdf", name: "Designer", img: "image", bio: "bio", instagram: "@katharinekidd", phone: "310-313-0993" )
+kk = Designer.create!(category: ad_contemp, username: "KKidd", password: "asdf", name: "KATHARINE KIDD", img: "https://i.postimg.cc/g28kLkr8/Screen-Shot-2020-08-31-at-2-26-37-PM.png", bio: "kk bio", instagram: "@katharinekidd", phone: "310-313-0993" )
+sm = Designer.create!(category: activewear, username: "Stella", password: "asdf", name: "adidas by Stella McCartney", img: "https://i.postimg.cc/vbWY7Dmx/Screen-Shot-2020-08-31-at-2-31-07-PM.png", bio: "Stella bio", instagram: "@stellamccartney", phone: "310-388-8732" )
 
 fav1 = FavoriteDesigner.create!(buyer: maggie, designer: kk)
+fav2 = FavoriteDesigner.create!(buyer: maggie, designer: sm)
 
 s1 = Season.create!(name: "Spring/Summer 2021")
 
