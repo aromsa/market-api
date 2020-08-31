@@ -2,6 +2,7 @@
 Buyer.destroy_all
 Category.destroy_all
 Designer.destroy_all
+FavoriteDesigner.destroy_all
 Season.destroy_all
 Collection.destroy_all
 Delivery.destroy_all
@@ -20,6 +21,8 @@ activewear = Category.create!(name: "Activewear")
 
 kk = Designer.create!(category: ad_contemp, username: "KKidd", password: "asdf", name: "Katharine Kidd", img: "image", bio: "bio", instagram: "@katharinekidd", phone: "310-313-0993" )
 designer = Designer.create!(category: activewear, username: "active", password: "asdf", name: "Designer", img: "image", bio: "bio", instagram: "@katharinekidd", phone: "310-313-0993" )
+
+fav1 = FavoriteDesigner.create!(buyer: maggie, designer: kk)
 
 s1 = Season.create!(name: "Spring/Summer 2021")
 

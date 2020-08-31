@@ -42,7 +42,8 @@ class BuyersController < ApplicationController
   def login
     @buyer = Buyer.find_by(username: params[:username])
     if @buyer && @buyer.authenticate(params[:password])
-      render json: @buyer
+      wristband = encode_token({buyer_id: @buyer.id})
+      render json: {buyer: BuyerSerializer.new(@buyer), token: wristband}
     else
       render json: {message: "Incorrect username or password"}
     end
