@@ -20,6 +20,9 @@ designer = Category.create!(name: "Designer")
 activewear = Category.create!(name: "Activewear")
 
 kk = Designer.create!(category: ad_contemp, username: "KKidd", password: "asdf", name: "KATHARINE KIDD", img: "https://i.postimg.cc/g28kLkr8/Screen-Shot-2020-08-31-at-2-26-37-PM.png", bio: "kk bio", instagram: "@katharinekidd", phone: "310-313-0993" )
+ra = Designer.create!(category: ad_contemp, username: "Rachel", password: "asdf", name: "Rachel Antonoff", img: "https://i.postimg.cc/SR9m490B/Screen-Shot-2020-09-03-at-5-02-51-PM.png", bio: "ra bio", instagram: "@rachelantonoff", phone: "310-313-0993" )
+gi = Designer.create!(category: ad_contemp, username: "Ganni", password: "asdf", name: "GANNI", img: "https://i.postimg.cc/P5HMbMN7/Screen-Shot-2020-09-03-at-4-22-10-PM.png", bio: "ra bio", instagram: "@ganni", phone: "310-313-0993" )
+bt = Designer.create!(category: ad_contemp, username: "timo", password: "asdf", name: "byTiMo", img: "https://i.postimg.cc/7hvKFrYH/Screen-Shot-2020-09-03-at-4-32-50-PM.png", bio: "bt bio", instagram: "@bytimo", phone: "310-313-0993" )
 sm = Designer.create!(category: activewear, username: "Stella", password: "asdf", name: "adidas by Stella McCartney", img: "https://i.postimg.cc/vbWY7Dmx/Screen-Shot-2020-08-31-at-2-31-07-PM.png", bio: "Stella bio", instagram: "@stellamccartney", phone: "310-388-8732" )
 
 fav1 = FavoriteDesigner.create!(buyer: maggie, designer: kk)
