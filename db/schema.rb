@@ -92,11 +92,9 @@ ActiveRecord::Schema.define(version: 2020_08_26_212641) do
   create_table "selected_styles", force: :cascade do |t|
     t.bigint "buyer_id", null: false
     t.bigint "style_id", null: false
-    t.bigint "favorite_designer_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["buyer_id"], name: "index_selected_styles_on_buyer_id"
-    t.index ["favorite_designer_id"], name: "index_selected_styles_on_favorite_designer_id"
     t.index ["style_id"], name: "index_selected_styles_on_style_id"
   end
 
@@ -132,7 +130,6 @@ ActiveRecord::Schema.define(version: 2020_08_26_212641) do
   add_foreign_key "favorite_designers", "designers"
   add_foreign_key "images", "styles"
   add_foreign_key "selected_styles", "buyers"
-  add_foreign_key "selected_styles", "favorite_designers"
   add_foreign_key "selected_styles", "styles"
   add_foreign_key "styles", "collections"
   add_foreign_key "styles", "deliveries"
