@@ -23,10 +23,20 @@ kk = Designer.create!(category: ad_contemp, username: "KKidd", password: "asdf",
 ra = Designer.create!(category: ad_contemp, username: "Rachel", password: "asdf", name: "Rachel Antonoff", img: "https://i.postimg.cc/SR9m490B/Screen-Shot-2020-09-03-at-5-02-51-PM.png", bio: "ra bio", instagram: "@rachelantonoff", phone: "310-313-0993" )
 gi = Designer.create!(category: ad_contemp, username: "Ganni", password: "asdf", name: "GANNI", img: "https://i.postimg.cc/P5HMbMN7/Screen-Shot-2020-09-03-at-4-22-10-PM.png", bio: "ra bio", instagram: "@ganni", phone: "310-313-0993" )
 bt = Designer.create!(category: ad_contemp, username: "timo", password: "asdf", name: "byTiMo", img: "https://i.postimg.cc/7hvKFrYH/Screen-Shot-2020-09-03-at-4-32-50-PM.png", bio: "bt bio", instagram: "@bytimo", phone: "310-313-0993" )
+ax = Designer.create!(category: ad_contemp, username: "Alexis", password: "asdf", name: "ALEXIS", img: "https://i.postimg.cc/p2qr63fS/Screen-Shot-2020-09-10-at-10-04-59-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+mc = Designer.create!(category: ad_contemp, username: "Maygel", password: "asdf", name: "MAYGEL CORONEL", img: "https://i.postimg.cc/BJhthdcV/Screen-Shot-2020-09-10-at-10-13-39-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+uj = Designer.create!(category: ad_contemp, username: "Ulla", password: "asdf", name: "ULLA JOHNSON", img: "https://i.postimg.cc/yspkjMTr/Screen-Shot-2020-09-10-at-10-21-41-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+tg = Designer.create!(category: ad_contemp, username: "Great", password: "asdf", name: "the Great", img: "https://i.postimg.cc/kXWM7pkW/Screen-Shot-2020-09-10-at-10-26-36-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+im = Designer.create!(category: ad_contemp, username: "Isabel", password: "asdf", name: "ISABEL MARANT", img: "https://i.postimg.cc/ZRPjbZF1/Screen-Shot-2020-09-10-at-10-30-22-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+lpo = Designer.create!(category: ad_contemp, username: "lpo", password: "asdf", name: "LA PRESTIC OUISTON", img: "https://i.postimg.cc/jx8L1Bb5/Screen-Shot-2020-09-10-at-10-34-51-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
+rqa = Designer.create!(category: ad_contemp, username: "Raquel", password: "asdf", name: "Raquel Allegra", img: "https://i.postimg.cc/TdmTVS3F/Screen-Shot-2020-09-10-at-10-41-47-AM.png", bio: "Alexis bio", instagram: "@stellamccartney", phone: "310-388-8732" )
 sm = Designer.create!(category: activewear, username: "Stella", password: "asdf", name: "adidas by Stella McCartney", img: "https://i.postimg.cc/vbWY7Dmx/Screen-Shot-2020-08-31-at-2-31-07-PM.png", bio: "Stella bio", instagram: "@stellamccartney", phone: "310-388-8732" )
 
-fav1 = FavoriteDesigner.create!(buyer: anna, designer: kk)
-fav2 = FavoriteDesigner.create!(buyer: anna, designer: sm)
+
+fav1 = FavoriteDesigner.create!(buyer: anna, designer: rqa)
+fav2 = FavoriteDesigner.create!(buyer: anna, designer: kk)
+fav3 = FavoriteDesigner.create!(buyer: anna, designer: lpo)
+
 
 s1 = Season.create!(name: "Spring/Summer 2021")
 
@@ -93,6 +103,10 @@ img19 = Image.create!(style: irelandW, img:"https://i.postimg.cc/np985YLH/kk2020
 img20 = Image.create!(style: siennaB, img:"https://i.postimg.cc/9cpjtXMT/kk20200819-1369.jpg")
 img21 = Image.create!(style: jude, img:"https://i.postimg.cc/ZbYnFD4Y/kk20200819-2896.jpg")
 img22 = Image.create!(style: rio, img:"https://i.postimg.cc/0xxFZRT0/kk20200819-1638.jpg")
+
+ss1 = SelectedStyle.create!(buyer: anna, style: savannahF)
+
+
 # img23 = Image.create!(style: saraC, img:"https://i.postimg.cc/Vm99Yv43/kk20200819-2044.jpg")
 
 # {
