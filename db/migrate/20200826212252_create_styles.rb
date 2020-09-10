@@ -7,7 +7,7 @@ class CreateStyles < ActiveRecord::Migration[6.0]
 
       t.string :upc
       t.string :style_name
-      t.integer :style_number
+      t.string :style_number
       t.string :color
       t.string :size
       t.string :fabric

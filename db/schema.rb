@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_212641) do
     t.bigint "style_category_id", null: false
     t.string "upc"
     t.string "style_name"
-    t.integer "style_number"
+    t.string "style_number"
     t.string "color"
     t.string "size"
     t.string "fabric"
